@@ -1,0 +1,88 @@
+button {
+    width: 200px;
+    height: 50px;
+    color: whitesmoke;
+    background-color: blueviolet;
+}
+
+.container {
+    display: grid;
+row-gap: 5px;
+column-gap: 2px;
+grid-template-areas: 
+"header header header header header "
+"hero hero main main main"
+"hero hero main main main"
+"sidebar sidebar main main main"
+"sidebar sidebar extra extra extra"
+"sidebar sidebar extra extra extra"
+"img img img img post"
+"footer footer footer footer footer"
+;
+
+}
+
+.header {
+    text-align: center;
+
+    background-color: aqua;
+    grid-area: header;
+}
+
+.hero {
+    background-color: #DFCADD;
+    text-align: center;
+    grid-area: hero;
+    height: 200px;
+
+}
+
+.sidebar {
+    text-align: center;
+    background-color: #80C268;
+    grid-area: sidebar;
+    height: 250px;
+
+}
+
+.main-content {
+    text-align: center;
+    background-color: #EDC528;
+    grid-area: main;
+    height: 350px;
+
+
+}
+
+.extra-content {
+    text-align: center;
+    background-color: #898987;
+    grid-area: extra;
+    height: 100px;
+
+}
+
+
+
+.related-img {
+    background-color: #00B68D;
+    text-align: center;
+    grid-area: img;
+
+
+}
+
+.related-post {
+    background-color: #FFCDD6;
+    text-align: center;
+    grid-area: post;
+    
+
+}
+
+.footer {
+    background-color: #FDA503;
+    text-align: center;
+    grid-area:footer;
+    
+}
